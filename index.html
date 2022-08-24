@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+      rel="shortcut icon"
+      href="./img/bannerpintura.JPG"
+    />
+    <title>Mondrian</title>
+    <script src="https://kit.fontawesome.com/8be75564d3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--siempre la hoja del CCS abajo de la de bootstrap-->
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+<body>
+  <div class="bodyIndex">
+  <!--HEADER-->
+  <header>
+  <nav class="navbar navbar-expand-lg nav-color">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"> <img src="./img/logo3.jpg" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navegacion collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./pages/biografia.html">BIOGRAFÍA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./pages/pinturas.html">PINTURAS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./pages/destijl.html">DE STIJL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./pages/contacto.html">CONTACTO</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+</header>
+<!--FIN HEADER-->
+
+ 
+    <main>
+      <!--CARRUSEL-->
+      <section>
+        <div id="carouselExampleInterval" class="carousel slide animate__animated animate__bounce" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="./img/pietBanner (1).jpg" class="d-block w-100" alt="bannerPiet">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="./img/bannerpintura.JPG" class="d-block w-100" alt="bannerPiet">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </section>
+    <!--FIN CARRUSEL-->
+    </main>
+
+      <!--FOOTER-->
+      <footer class="footer-color text-center text-dark footerIndex">
+      <div class="container p-3 pb-0">
+        <section class="mb-2">
+          <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-google"></i></a>
+
+          <a class="btn btn-outline-dark btn-floating m-1" href="https://www.linkedin.com/in/jessica-sgorbini-alejandra/" role="button"
+            ><i class="fab fa-linkedin-in"></i></a>
+          
+          <a class="btn btn-outline-dark btn-floating m-1" href="https://github.com/jsgorbini" role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+      </div>
+      <!-- Copyright -->
+      <div class="text-center p-2 color">
+        <p>&copy; 2022 by Jessica Sgorbini. All rights reserved.</p>
+      </div>
+    </footer>
+    <!--FIN FOOTER-->
+  </div>
+    
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <!--etiqueta script siempre arriba del cierre de body-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>
