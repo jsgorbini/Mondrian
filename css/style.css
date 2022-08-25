@@ -138,46 +138,61 @@ div .navegacion {
 .main-timeline .timeline:nth-child(4n+4) .timeline-content:before{ background: #000000; }
 
 /*---------------------------PINTURAS GALERIA--------------------------*/
-.tituloH2 {
-  font-size: 8vh;
-  letter-spacing: 3px;
+
+.containerGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 0.2fr);
+  padding: 4vh;
+  gap: 17px;
+  width: 100%;
+  margin: 8vh 0 5vh 8vh;
 }
-.tituloH1{
-  letter-spacing: 2px;
-}
-.t-stroke {
-  color: transparent;
-  -moz-text-stroke-width: 2px;
-  -webkit-text-stroke-width: 2px;
-  -moz-text-stroke-color: #eedfdf;
-  -webkit-text-stroke-color: #000000;
-}
-.t-shadow {
-  text-shadow: 7px 7px #EFD40A;
-}
-.galeriaPinturas{
-  overflow: hidden;
+
+.containerGrid .containerImagen{
   position: relative;
+  width: 290px;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+  cursor: pointer;
+  
+}
+.containerGrid .containerImagen img{
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
+}
+.containerGrid .containerImagen .overlay{
+  position: absolute;
+  top:0;
+  width: 100%;
+  height: 100%;
+  background: rgba(39, 43, 44, 0.534);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+.containerGrid .containerImagen:hover> .overlay{
+  opacity: 1;
+  visibility: visible;
+}
+.containerGrid .containerImagen:hover> .overlay h3{
+  margin-top: 80px;
+  margin-bottom: 15px;
+}
+.containerGrid .containerImagen .overlay h3{
+  color: white;
+  transition: all 500ms ease-out;
+}
+.containerGrid .containerImagen .overlay p{
+  color: white;
+}
+.containerGrid .containerImagen:hover> img{
+  transform: scale(1.3);
 }
 
-.galeriaPinturas img{
-  transition: 0.5s;
-  object-fit: cover;
-    display: block;
-    height: 300px;
-    position: relative;
-}
-.galeriaPinturas img:hover{
-  transform: scale(1.2);
-}
-
-.modalButton{
-  display: flex;
-  flex-direction: row-reverse;
-  padding: 1rem 1rem;
-  align-items: center;
-  justify-content: space-between;
-}
 /*---------------------DE STIJL--------------------*/
 .row {
   justify-content: space-around;
@@ -190,6 +205,16 @@ div .navegacion {
 }
 .colorCartaBlue{
   background-color: #024b86;
+}
+.t-stroke {
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000000;
+}
+
+.t-shadow {
+  text-shadow: 7px 7px #ff2525;
+  letter-spacing: 3px;
 }
 
 /*---------------------CONTACTO-------------------*/
@@ -214,21 +239,41 @@ div .navegacion {
   box-shadow: 30px 20px 20px 20px #00000054;
 }
 /*-------------------RESPONSIVE---------------------------*/
-@media screen and (max-width:767px){
+@media screen and (max-width:769px){
     .main-timeline .timeline{ width: 100%; 
     }
     .carousel-item img {
       height: 65vh;
     }
+    .containerGrid {
+      display: grid;
+      grid-template-columns: repeat(2, 0.2fr);
+      margin: 0 0 8vh 0;
+      padding: 0;
+      justify-content: center;
+    }
 }
 
 @media only screen and (max-width: 415px) {
   .navbar-brand img {
-    width: 33vh;
+    width: 32vh;
   }
   
   .carousel-item img {
     width: 100%;
     height: 70vh;/* se ve feo, tengo que cambiar la imagen para la 2da entrega */
+  }
+
+  .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 0.2fr);
+    justify-content: center;
+    padding: 0;
+    margin: 0 0 8vh 0;
+    gap: 5vh;
+  }
+  .containerGrid .containerImagen{
+    width: 250px;
+    height: 300px;
   }
 }
