@@ -8,14 +8,16 @@ font-family: 'Roboto Slab', serif;*/
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
   }
-  p{
-    font-family:'Roboto Slab', serif;
-  }
 
 /*HEADER*/
 .nav-color {
   box-shadow: 0px 0px 30px #00000054;
 }
+.nav-hover a:hover{
+  border-bottom: 2px solid red;
+  color: #f32222 !important;
+}
+
 .navbar-brand img {
   width: 50vh;
   margin-left: 15px;
@@ -25,25 +27,27 @@ div .navegacion {
   margin-right: 6vh;
 }
 .nav-item {
-  letter-spacing: 2px;
   padding: 15px;
   font-size: 17px;
 }
+
 /*--------------INDEX-----------------*/
 .carousel-item img {
   width: 100%;
-  max-height: 90vh;
 }
 .bodyIndex{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
+
 .footerIndex{
   margin-top: auto;
 }
 
+
 /*----------------------------BIOGRAFIA------------------------*/
+
 .biografia{
   padding-top: 8vh;
   padding-bottom: 8vh;
@@ -145,7 +149,8 @@ div .navegacion {
   padding: 4vh;
   gap: 17px;
   width: 100%;
-  margin: 8vh 0 5vh 8vh;
+  justify-items: center;
+  justify-content: space-evenly;
 }
 
 .containerGrid .containerImagen{
@@ -192,6 +197,10 @@ div .navegacion {
 .containerGrid .containerImagen:hover> img{
   transform: scale(1.3);
 }
+.broadwayBoogie{
+  box-shadow: 15px 15px 15px 25px rgba(22, 90, 236, 0.5);
+  border-radius: 15px;
+}
 
 /*---------------------DE STIJL--------------------*/
 .row {
@@ -205,16 +214,6 @@ div .navegacion {
 }
 .colorCartaBlue{
   background-color: #024b86;
-}
-.t-stroke {
-  color: transparent;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #000000;
-}
-
-.t-shadow {
-  text-shadow: 7px 7px #ff2525;
-  letter-spacing: 3px;
 }
 
 /*---------------------CONTACTO-------------------*/
@@ -242,9 +241,7 @@ div .navegacion {
 @media screen and (max-width:769px){
     .main-timeline .timeline{ width: 100%; 
     }
-    .carousel-item img {
-      height: 65vh;
-    }
+    
     .containerGrid {
       display: grid;
       grid-template-columns: repeat(2, 0.2fr);
@@ -254,16 +251,11 @@ div .navegacion {
     }
 }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 425px) {
   .navbar-brand img {
-    width: 32vh;
+    width: 26vh;
   }
   
-  .carousel-item img {
-    width: 100%;
-    height: 70vh;/* se ve feo, tengo que cambiar la imagen para la 2da entrega */
-  }
-
   .containerGrid {
     display: grid;
     grid-template-columns: repeat(1, 0.2fr);
