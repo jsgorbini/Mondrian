@@ -8,7 +8,9 @@
       href="../img/pinturas/p4.JPG"
     />
     <title>Mondrian</title>
+    <!--iconos redes-->
     <script src="https://kit.fontawesome.com/8be75564d3.js" crossorigin="anonymous"></script>
+    <!-- Animaciones-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -19,7 +21,7 @@
 <body>
   <!--HEADER-->
   <header>
-  <nav class="navbar navbar-expand-lg nav-color">
+  <nav class="navbar navbar-expand-lg bg-white">
     <div class="container-fluid">
       <a class="navbar-brand" href="../index.html"> <img src="../img/logo3.jpg" alt="logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,19 +30,19 @@
       <div class="navegacion collapse navbar-collapse nav-hover" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+            <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./biografia.html">BIOGRAFÍA</a>
+            <a class="nav-link" aria-current="page" href="./biografia.html">BIOGRAFÍA</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./pinturas.html">PINTURAS</a>
+            <a class="nav-link active" aria-current="page" href="#">PINTURAS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./destijl.html">DE STIJL</a>
+            <a class="nav-link" aria-current="page" href="./destijl.html">DE STIJL</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./contacto.html">CONTACTO</a>
+            <a class="nav-link" aria-current="page" href="./contacto.html">CONTACTO</a>
           </li>
       </div>
     </div>
@@ -50,20 +52,22 @@
 
  
  <main>
-    <!-- GALERIA CON GRID-->
+    <!-- GALERIA CON GRID SIN BOOTSTRAP-->
    <section class="container pb-5 mb-5">
-    <h2 class="text-center mt-5 pt-4 mb-4 title">Sus Obras</h2>
+    <!-- TITULO DE LA GALERIA-->
+    <h1 class="text-center mt-5 pt-4 mb-4 title">Sus Obras</h1>
+    <!-- CONTENEDOR DE LAS PINTURAS-->
      <div class="containerGrid">
-       <div class="containerImagen">
-         <a data-bs-toggle="modal" data-bs-target="#modalImage1"><img src="../img/pinturas/p1.jpg" alt="galeria">
+      <!-- PINTURA con efecto overlay-->
+       <div data-bs-toggle="modal" data-bs-target="#modalImagen1" class="containerImagen">
+         <img src="../img/pinturas/p1.jpg" alt="galeria">
           <div class="overlay">
             <h3>Autorretrato</h3>
             <p class="h3"> 1900</p>
           </div>
-         </a>
        </div>
-
-       <div class="containerImagen data-toggle+">
+       <!-- PINTURA con efecto overlay-->
+       <div data-bs-toggle="modal" data-bs-target="#modalImagen2"  class="containerImagen">
          <img src="../img/pinturas/p2.PNG" alt="galeria">
          <div class="overlay">
             <h3>Molino al sol</h3>
@@ -71,8 +75,8 @@
             <p>Gemeentemuseum, La Haya</p>
          </div>
        </div>
-
-       <div class="containerImagen">
+        <!-- PINTURA con efecto overlay-->
+       <div data-bs-toggle="modal" data-bs-target="#modalImagen3"  class="containerImagen">
          <img src="../img/pinturas/p3.JPG" alt="galeria">
          <div class="overlay">
             <h3>Compositie in lijn</h3>
@@ -80,8 +84,8 @@
             <p>Kroller-Muller Museum</p>
          </div>
        </div>
-
-       <div class="containerImagen">
+       <!-- PINTURA con efecto overlay-->
+       <div data-bs-toggle="modal" data-bs-target="#modalImagen4"  class="containerImagen">
          <img src="../img/pinturas/p4.JPG" alt="galeria">
          <div class="overlay">
             <h3>Composición con rojo, amarillo y azul</h3>
@@ -89,8 +93,8 @@
             <p>Kunsthaus Zürich</p>
          </div>
        </div>
-
-       <div class="containerImagen">
+        <!-- PINTURA con efecto overlay-->
+       <div data-bs-toggle="modal" data-bs-target="#modalImagen5" class="containerImagen">
          <img src="../img/pinturas/p5.PNG" alt="galeria">
          <div class="overlay">
             <h3>Woods near Oele</h3>
@@ -98,8 +102,8 @@
             <p>Gemeentemuseum den Haag, Hague, Netherlands</p>
          </div>
        </div>
-       
-       <div class="containerImagen">
+       <!-- PINTURA con efecto overlay-->
+       <div data-bs-toggle="modal" data-bs-target="#modalImagen6"  class="containerImagen">
          <img src="../img/pinturas/p6.PNG" alt="galeria">
          <div class="overlay">
             <h3>Tableau 1</h3>
@@ -107,8 +111,8 @@
             <p>Kroller-Muller Museum</p>
          </div>
        </div>
-
-       <div class="containerImagen">
+        <!-- PINTURA con efecto overlay-->
+       <div data-bs-toggle="modal" data-bs-target="#modalImagen7"  class="containerImagen">
          <img src="../img/pinturas/p7.JPG" alt="galeria">
          <div class="overlay">
             <h3>Composition with Grids</h3>
@@ -116,8 +120,8 @@
             <p class="h3">1919</p>
          </div>
        </div>
-
-       <div class="containerImagen">
+       <!-- PINTURA con efecto overlay-->
+       <div data-bs-toggle="modal" data-bs-target="#modalImagen8"  class="containerImagen">
          <img src="../img/pinturas/p8.JPG" alt="galeria">
          <div class="overlay">
             <h3>Composition in Oval with Color Planes 1</h3>
@@ -125,8 +129,8 @@
             <p> MoMa</p>
          </div>
        </div>
-
-       <div class="containerImagen">
+       <!-- PINTURA con efecto overlay-->
+       <div data-bs-toggle="modal" data-bs-target="#modalImagen9"  class="containerImagen">
          <img src="../img/pinturas/p9.JPG" alt="galeria">
          <div class="overlay">
             <h3>New york City 1</h3>
@@ -134,16 +138,16 @@
             <p>Centro Pompidou</p>
          </div>
        </div>
-
-       <div class="containerImagen">
+       <!-- PINTURA con efecto overlay-->
+       <div data-bs-toggle="modal" data-bs-target="#modalImagen10"  class="containerImagen">
          <img src="../img/pinturas/p10.PNG" alt="galeria">
          <div class="overlay">
             <h3>Manzanas, tarro de jengibre y plato en el borde</h3>
             <p class="h3">1901</p>
          </div>
        </div>
-
-       <div class="containerImagen">
+       <!-- PINTURA con efecto overlay-->
+       <div data-bs-toggle="modal" data-bs-target="#modalImagen11"  class="containerImagen">
          <img src="../img/pinturas/p11.PNG" alt="galeria">
          <div class="overlay">
             <h3>Broadway Boogie-Woogie</h3>
@@ -151,8 +155,8 @@
             <p>MoMa</p>
          </div>
        </div>
-
-       <div class="containerImagen">
+        <!-- PINTURA con efecto overlay-->
+       <div data-bs-toggle="modal" data-bs-target="#modalImagen12"  class="containerImagen">
          <img src="../img/pinturas/p12.JPG" alt="galeria">
          <div class="overlay">
             <h3>El árbol gris</h3>
@@ -160,8 +164,8 @@
             <p>Museo Municipal de la Haya</p>
          </div>
        </div>
-
-       <div class="containerImagen">
+        <!-- PINTURA con efecto overlay-->
+       <div data-bs-toggle="modal" data-bs-target="#modalImagen13"  class="containerImagen">
          <img src="../img/pinturas/p13.PNG" alt="galeria">
          <div class="overlay">
             <h3>Naturaleza muerta con tarro de jengibre</h3>
@@ -169,8 +173,8 @@
             <p>Gemeentemuseum, La Haya</p>
          </div>
        </div>
-        
-       <div class="containerImagen">
+       <!-- PINTURA con efecto overlay--> 
+       <div data-bs-toggle="modal" data-bs-target="#modalImagen14"  class="containerImagen">
          <img src="../img/pinturas/p14.PNG" alt="galeria">
          <div class="overlay">
             <h3>Composition A</h3>
@@ -178,8 +182,8 @@
             <p>La Galleria Nazionale</p>
         </div>
        </div>
-
-       <div class="containerImagen">
+        <!-- PINTURA con efecto overlay-->
+       <div data-bs-toggle="modal" data-bs-target="#modalImagen15"  class="containerImagen">
          <img src="../img/pinturas/p15.jpg" alt="galeria">
          <div class="overlay">
             <h3>Stammer Mill with Streaked Sky</h3>
@@ -187,8 +191,8 @@
             <p>The Nelson-Atkins Museum of Art</p>
          </div>
        </div>
-
-       <div class="containerImagen">
+        <!-- PINTURA con efecto overlay-->
+       <div data-bs-toggle="modal" data-bs-target="#modalImagen16" class="containerImagen">
          <img src="../img/pinturas/p16.JPG" alt="galeria">
          <div class="overlay">
             <h3>Victory Boogie-Woogie</h3>
@@ -196,8 +200,8 @@
             <p>Museo Municipal de la Haya</p>
          </div>
        </div>
-
-       <div class="containerImagen">
+       <!-- PINTURA con efecto overlay-->
+       <div data-bs-toggle="modal" data-bs-target="#modalImagen17"  class="containerImagen">
         <img src="../img/pinturas/p17.JPG" alt="galeria">
          <div class="overlay">
             <h3>El árbol gris</h3>
@@ -205,8 +209,8 @@
             <p>Museo Municipal de la Haya</p>
          </div>
        </div>
-
-       <div class="containerImagen">
+        <!-- PINTURA con efecto overlay-->
+       <div data-bs-toggle="modal" data-bs-target="#modalImagen18"  class="containerImagen">
          <img src="../img/pinturas/p18.jpg" alt="galeria">
          <div class="overlay">
             <h3>Composition 2</h3>
@@ -214,16 +218,16 @@
             <p>Museo Solomon R. Guggenheim</p>
          </div>
        </div>
-
-       <div class="containerImagen">
+        <!-- PINTURA con efecto overlay-->
+       <div data-bs-toggle="modal" data-bs-target="#modalImagen19" class="containerImagen">
          <img src="../img/pinturas/p19.JPG" alt="galeria">
          <div class="overlay">
             <h3>El molino rojo</h3>
             <p class="h3">1911</p>
          </div>
        </div>
-
-       <div class="containerImagen">
+       <!-- PINTURA con efecto overlay-->
+       <div data-bs-toggle="modal" data-bs-target="#modalImagen20"  class="containerImagen">
          <img src="../img/pinturas/p20.jpg" alt="galeria">
          <div class="overlay">
             <h3>At Work / On the Land</h3>
@@ -232,67 +236,205 @@
          </div>
        </div>
      </div>
+     <!-- FIN CONTENEDOR DE LAS PINTURAS-->
    </section>
+   <!-- FIN GALERIA CON GRID SIN BOOTSTRAP-->
 
-     <!-- MODAL GALELRIA PINTURAS que no funciona COMO QUIERO-->
-     <div class="modal fade" id="modalImage1" tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" style="display:none">
-      <div class="modalButton">
-        <button type="button" class="btn-close mr-5 p-3" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
+    <!-- MODAL GALERIA PINTURAS-->
+    <div class="modal fade" id="modalImagen1" tabindex="-1" aria-labelledby="modalImagen1" aria-hidden="true" style="display:none">
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
-          <img src="../img/pinturas/p1.jpg" alt="imagen">
+          <img src="../img/pinturas/p1.jpg" alt="pinturas">
         </div>
       </div>
     </div>
+    <div class="modal fade" id="modalImagen2" tabindex="-1" aria-labelledby="modalImagen2" aria-hidden="true" style="display:none">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <img src="../img/pinturas/p2.PNG" alt="pinturas">
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalImagen3" tabindex="-1" aria-labelledby="modalImagen3" aria-hidden="true" style="display:none">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <img src="../img/pinturas/p3.JPG" alt="pinturas">
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalImagen4" tabindex="-1" aria-labelledby="modalImagen4" aria-hidden="true" style="display:none">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <img src="../img/pinturas/p4.jpg" alt="pinturas">
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalImagen5" tabindex="-1" aria-labelledby="modalImagen5" aria-hidden="true" style="display:none">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <img src="../img/pinturas/p5.PNG" alt="pinturas">
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalImagen6" tabindex="-1" aria-labelledby="modalImagen6" aria-hidden="true" style="display:none">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <img src="../img/pinturas/p6.PNG" alt="pinturas">
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalImagen7" tabindex="-1" aria-labelledby="modalImagen7" aria-hidden="true" style="display:none">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <img src="../img/pinturas/p7.JPG" alt="pinturas">
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalImagen8" tabindex="-1" aria-labelledby="modalImagen8" aria-hidden="true" style="display:none">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <img src="../img/pinturas/p8.JPG" alt="pinturas">
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalImagen9" tabindex="-1" aria-labelledby="modalImagen9" aria-hidden="true" style="display:none">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <img src="../img/pinturas/p9.JPG" alt="pinturas">
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalImagen10" tabindex="-1" aria-labelledby="modalImagen10" aria-hidden="true" style="display:none">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <img src="../img/pinturas/p10.PNG" alt="pinturas">
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalImagen11" tabindex="-1" aria-labelledby="modalImagen11" aria-hidden="true" style="display:none">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <img src="../img/pinturas/p11.PNG" alt="pinturas">
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalImagen12" tabindex="-1" aria-labelledby="modalImagen12" aria-hidden="true" style="display:none">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <img src="../img/pinturas/p12.JPG" alt="pinturas">
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalImagen13" tabindex="-1" aria-labelledby="modalImagen13" aria-hidden="true" style="display:none">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <img src="../img/pinturas/p13.PNG" alt="pinturas">
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalImagen14" tabindex="-1" aria-labelledby="modalImagen14" aria-hidden="true" style="display:none">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <img src="../img/pinturas/p14.PNG" alt="pinturas">
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalImagen15" tabindex="-1" aria-labelledby="modalImagen15" aria-hidden="true" style="display:none">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <img src="../img/pinturas/p15.jpg" alt="pinturas">
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalImagen16" tabindex="-1" aria-labelledby="modalImagen16" aria-hidden="true" style="display:none">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <img src="../img/pinturas/p16.JPG" alt="pinturas">
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalImagen17" tabindex="-1" aria-labelledby="modalImagen17" aria-hidden="true" style="display:none">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <img src="../img/pinturas/p17.JPG" alt="pinturas">
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalImagen18" tabindex="-1" aria-labelledby="modalImagen18" aria-hidden="true" style="display:none">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <img src="../img/pinturas/p18.jpg" alt="pinturas">
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalImagen19" tabindex="-1" aria-labelledby="modalImagen19" aria-hidden="true" style="display:none">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <img src="../img/pinturas/p19.JPG" alt="pinturas">
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalImagen20" tabindex="-1" aria-labelledby="modalImagen20" aria-hidden="true" style="display:none">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <img src="../img/pinturas/p20.jpg" alt="pinturas">
+        </div>
+      </div>
+    </div>
+    <!-- FIN MODAL GALERIA PINTURAS-->
+
 
     
 
-<!-- Secction 2 Broadway Boogie Woogie -->
-    <section class="mt-5 pt-3 pb-5 ">
+<!-- COMIENZO Secction 2 Broadway Boogie Woogie -->
+   <section class="mt-5 pt-3 pb-5 ">
       <div class="container">
-      <h2 class="text-center mb-5 pb-3">Broadway Boogie Woogie</h2>
-      <div class="row">
-        <div class="col-lg-6">
+        <p class="broadwayBoogie">divisorio</p>
+       <h2 class="text-center mb-3 pb-3 pt-3">Broadway Boogie Woogie</h2>
+       <div class="row">
+         <div class="col-lg-6">
            <p>Mondrian llegó a Nueva York en 1940, uno de los muchos artistas europeos que se mudaron a Estados Unidos para escapar de la Segunda Guerra Mundial. Inmediatamente se enamoró de la ciudad y de la música boogie-woogie, a la que conoció en su primera noche en Nueva York. Pronto comenzó, como él dijo, a poner un poco de boogie-woogie en sus pinturas.</p>
            <p>La doctrina estética del neoplasticismo de Mondrian restringía al pintor a los tipos más básicos de líneas, es decir, a líneas rectas horizontales y verticales, y a una gama de colores igualmente limitada, la tríada primaria de rojo, amarillo y azul más blanco, negro y negro. y los grises en el medio. Pero Broadway Boogie Woogie omite el negro y rompe las barras de color que alguna vez fueron uniformes de Mondrian en segmentos multicolores. Rebotando unos contra otros, estos diminutos bloques parpadeantes de color crean un ritmo vital y palpitante, una vibración óptica que salta de intersección en intersección como el tráfico en las calles de Nueva York. Al mismo tiempo, la imagen está cuidadosamente calibrada, sus colores se intercalan con bloques grises y blancos.</p>
-        </div>
-        <div class="col-lg-6 pt-3">
-          <div class="ratio ratio-16x9">
-            <iframe src="https://www.youtube.com/embed/05KLW-xsoxE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-    </section>
+         </div>
+         <div class="col-lg-6 pt-3">
+           <div class="ratio ratio-16x9">
+             <iframe src="https://www.youtube.com/embed/05KLW-xsoxE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           </div>
+         </div>
+       </div>
+       <p class="broadwayBoogie mt-3">divisorio</p>
+     </div>
+   </section>
+   <!--FIN Secction 2 Broadway Boogie Woogie -->
 
  </main>
 
       <!--FOOTER-->
-   <footer class="footer-color text-center text-dark footerIndex">
+     <footer class="footer-color text-center text-dark footerIndex">
         <div class="container p-3 pb-0">
+          <!-- REDES -->
           <section class="mb-2">
             <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"
               ><i class="fab fa-google"></i></a>
-  
             <a class="btn btn-outline-dark btn-floating m-1" href="https://www.linkedin.com/in/jessica-sgorbini-alejandra/" role="button"
               ><i class="fab fa-linkedin-in"></i></a>
-            
             <a class="btn btn-outline-dark btn-floating m-1" href="https://github.com/jsgorbini" role="button"
               ><i class="fab fa-github"></i></a>
           </section>
         </div>
-      <!-- Copyright -->
-      <div class="text-center p-2 color">
-        <p>&copy; 2022 by Jessica Sgorbini. All rights reserved.</p>
-      </div>
-    </footer>
+       <!-- Copyright -->
+       <div class="p-2">
+         <p>&copy; 2022 by Jessica Sgorbini. All rights reserved.</p>
+       </div>
+     </footer>
+    <!--FIN FOOTER-->
     
+    <!--WOW para animaciones-->
     <script src="../js/wow.min.js"></script>
     <script>
       new WOW().init();
     </script>
-    <!--etiqueta script siempre arriba del cierre de body-->
+    <!--JSBOOTSTRAP etiqueta script siempre arriba del cierre de body-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>
