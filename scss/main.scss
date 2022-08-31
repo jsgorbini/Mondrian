@@ -1,0 +1,27 @@
+ * {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+  }
+/*PRIMERO SIEMPRE VARIABLES*/
+@import './variables/typo';
+
+/*ABAJO SECCIONES*/
+@import './secciones/header';
+@import './secciones/index.scss';
+@import './secciones/biografia';
+@import './secciones/pinturas';
+@import './secciones/destijl';
+@import './secciones/contacto';
+@import './secciones/footer';
+
+
+
+
+
+
+
+
+

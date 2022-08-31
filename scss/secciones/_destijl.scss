@@ -1,0 +1,18 @@
+/*---------------------DE STIJL--------------------*/
+/*Estilos de destijl.html las CARDS*/
+  .row {
+    justify-content: space-around;
+    .card{
+      border: none;
+      box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.349);
+    }
+    .colorCartaRed{
+      background-color: #f32222;
+    }
+    .colorCartaBlue{
+      background-color: #024b86;
+    }
+  }
+  
+  
+  
