@@ -4,89 +4,91 @@
     padding-top: 8vh;
     padding-bottom: 8vh;
     background-color: #EFD40A;
-  }
-  /* --SECCION CRONOLOGIA--*/
-  /*LINEA DE TIEMPO*/
-  .main-timeline:after{
-      content: '';
-      display: block;
-      clear: both;
-  }
+}
+
+/* --SECCION CRONOLOGIA--*/
+/*LINEA DE TIEMPO*/
+.main-timeline:after{
+    content: '';
+    display: block;
+    clear: both;
+}
   
-  /*Edicion de la linea negra*/
-  .timeline{
-      width: calc(50% + 58px);
-      border-top: 2px solid #000000;
-      float: left;
-      position: relative;
-      z-index: 1;
-  }
-  /*Edicion del punto negro de la cronologia*/
-  .timeline:before{
-      content: "";
-      background: #000000;
-      width: 10px;
-      height: 10px;
-      border-radius: 50px;
-      position: absolute;
-      top: -5px;
-      right: 0;
-  }
-  /*Edicion del contenido de la cronologia*/
-  .timeline-content{
+.timeline{ /*Edicion de la linea negra*/
+    width: calc(50% + 58px);
+    border-top: 2px solid #000000;
+    float: left;
+    position: relative;
+    z-index: 1;
+
+    .timeline-content{ /*Edicion del contenido de la cronologia*/
       color: #000000;
       text-align: center;
       padding: 15px 80px 15px 10px;
       display: block;
       position: relative;
-  }
-  
-  /*Edicion de la linea de colores*/
-  .timeline-content:before{
-      content: "";
-      background:#EFD40A;
-      width: 15px;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      right: 50px;
-  }
-  /*Edicion del AÑO en la cronologia*/
-  .timeline-year{
-      font-size: 35px;
-      line-height: 35px;
-      font-weight: 700;
-      transform: translateY(-50%) rotate(90deg);
-      position: absolute;
-      top: 50%;
-      right: -15px;
-  }
-  /*Posicionamiento del lado derecho*/
-  .timeline:nth-child(even){ float: right; }
-  .timeline:nth-child(even):before{
-      right: auto;
-      left: 0;
-  }
-  /*Padding del titulo parrafo del lado derecho*/
-  .timeline:nth-child(even) .timeline-content{
-      padding: 15px 10px 15px 80px;
-  }
-  /*ubicacion de la line de colores del lado derecho*/
-  .timeline:nth-child(even) .timeline-content:before{
-      right: auto;
-      left: 51px;
-  }
-  /*Posicionamiento del año*/
-  .timeline:nth-child(even) .timeline-year{
-      right: auto;
-      left: -15px;
-  }
-  /*Edicion del colores de la linea despues del amarillo*/
-  .timeline:nth-child(4n+2) .timeline-content:before{ background: red; }
-  .timeline:nth-child(4n+3) .timeline-content:before{ background: #024A86; }
-  .timeline:nth-child(4n+4) .timeline-content:before{ background: #000000; }
 
-  /*-------------------RESPONSIVE---------------------------*/
+       .timeline-year{/*Edicion del AÑO en la cronologia*/
+          font-size: 35px;
+          line-height: 35px;
+          font-weight: 700;
+          transform: translateY(-50%) rotate(90deg);
+          position: absolute;
+          top: 50%;
+          right: -15px;
+        }
+    }
+}
+
+/*Edicion del punto negro de la cronologia*/
+.timeline:before{
+    content: "";
+    background: #000000;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    position: absolute;
+    top: -5px;
+    right: 0;
+}
+  
+/*Edicion de la linea de colores*/
+.timeline-content:before{
+    content: "";
+    background:#EFD40A;
+    width: 15px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 50px;
+}
+  
+/*Posicionamiento del lado derecho*/
+.timeline:nth-child(even){ float: right; }
+.timeline:nth-child(even):before{
+    right: auto;
+    left: 0;
+}
+/*Padding del titulo parrafo del lado derecho*/
+.timeline:nth-child(even) .timeline-content{
+    padding: 15px 10px 15px 80px;
+}
+/*ubicacion de la line de colores del lado derecho*/
+.timeline:nth-child(even) .timeline-content:before{
+    right: auto;
+    left: 51px;
+}
+/*Posicionamiento del año*/
+.timeline:nth-child(even) .timeline-year{
+    right: auto;
+    left: -15px;
+}
+/*Edicion del colores de la linea despues del amarillo*/
+.timeline:nth-child(4n+2) .timeline-content:before{ background: red; }
+.timeline:nth-child(4n+3) .timeline-content:before{ background: #024A86; }
+.timeline:nth-child(4n+4) .timeline-content:before{ background: #000000; }
+
+/*-------------------RESPONSIVE---------------------------*/
 @media screen and (max-width:769px){
     .timeline{ width: 100%; 
     }

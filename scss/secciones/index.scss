@@ -1,14 +1,15 @@
 /*--------------INDEX-----------------*/
 /*estilos del boton de index.html*/
 .btn-outline-danger{
-    letter-spacing: 2px;
-    &:hover{
+  letter-spacing: 2px;
+
+  &:hover{
     border-radius: 6px;
     background-image: linear-gradient(to right, rgba(172,8,8,1) 0%, rgba(241,0,0,1) 58%);
     transition: all .25s;
     width: 200px;
-    }
   }
+}
   
 
   
