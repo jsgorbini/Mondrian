@@ -1,0 +1,15 @@
+/*mixin creado para el formulario de contacto*/
+@mixin btnContacto ($size){
+    color: black;
+    font-size: $size;
+    letter-spacing: 2px;
+    background-color: #EFD40A;
+    border: 2px solid #EFD40A;
+    border-radius: 25px;
+
+    &:hover{
+    color: #024A86;
+    border: 2px solid #024A86;
+    background-color: white;
+    }
+}

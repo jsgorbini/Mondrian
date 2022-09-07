@@ -1,19 +1,39 @@
 /*---------------------CONTACTO-------------------*/
 /*Estilos de contacto.html*/
 .mainContacto{
-  background-image: url(../img/pinturas/p11.jpg);
+  background-image: url(../img/pinturas/p22.jpg);
+  /*margenes del formulario*/
   .formMargen{
    padding-top: 10vh;
    padding-bottom: 8vh;
+   
+    /*Espaciado del titulo del Form*/
+   .fst-italic{
+    letter-spacing: 2px;
+    }
+    /*Color de fondo del formulario*/
    .fondoForm{
       background-color: white;
     }
+    /*Edicion del boton de enviar de contacto*/
     .btn-primary{
-      color: black;
-      background-color: #EFD40A
+      @include btnContacto(1.2rem);
+    }
+    /*Edicion del label de contacto*/
+    .form-label{
+      font-size: 19px;
+      letter-spacing: 1px;
+    }
+
+   /*Edicion del borde y del focus en el formulario*/
+    .form-control{
+      @extend %formContacto;
     }
   }
+  
 }
+
+
    
    
    

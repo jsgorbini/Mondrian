@@ -1,3 +1,4 @@
+/*RECETEO DE ESTILO*/
 *{
   margin: 0px;
   padding: 0px;
@@ -6,12 +7,10 @@
   box-sizing: border-box;
 }
 
-p{
-  font-family:'Source Sans Pro', sans-serif;
-  font-size: 17px;
-}
 /*PRIMERO SIEMPRE VARIABLES*/
 @import './variables/typo';
+@import './variables/extend';
+@import './variables/mixin';
 
 /*ABAJO SECCIONES*/
 @import './secciones/header';
