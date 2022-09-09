@@ -36,17 +36,40 @@ p {
   .bg-white div .navegacion {
     justify-content: flex-end;
     margin-right: 6vh; }
-    .bg-white div .navegacion .nav-item {
-      padding: 15px;
+    .bg-white div .navegacion a {
+      letter-spacing: 2px;
+      text-decoration: none;
+      color: black;
       font-size: 17px;
-      letter-spacing: 1px; }
+      position: relative; }
+    .bg-white div .navegacion .nav-item {
+      padding: 15px; }
       .bg-white div .navegacion .nav-item .nav-link {
         color: #000000; }
         .bg-white div .navegacion .nav-item .nav-link:hover {
-          text-decoration: underline 2px red;
           color: #f32222; }
       .bg-white div .navegacion .nav-item .active {
-        text-decoration: underline 2px red; }
+        color: red; }
+
+.navegacion a:after {
+  /*creacion de la linea*/
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: red;
+  /*animacion de derecha a izquierda*/
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out; }
+
+.navegacion a:hover:after {
+  /*animacion de derecha a izquierda*/
+  transform-origin: left;
+  transform: scaleX(1); }
 
 @media only screen and (max-width: 767px) {
   /*Logo del nav*/
