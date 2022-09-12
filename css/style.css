@@ -42,6 +42,23 @@ p {
       color: black;
       font-size: 17px;
       position: relative; }
+      .bg-white div .navegacion a:after {
+        /*creacion de la linea*/
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        background: red;
+        /*animacion de derecha a izquierda*/
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out; }
+      .bg-white div .navegacion a:hover:after {
+        transform-origin: left;
+        transform: scaleX(1); }
     .bg-white div .navegacion .nav-item {
       padding: 15px; }
       .bg-white div .navegacion .nav-item .nav-link {
@@ -50,26 +67,6 @@ p {
           color: #f32222; }
       .bg-white div .navegacion .nav-item .active {
         color: red; }
-
-.navegacion a:after {
-  /*creacion de la linea*/
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  width: 100%;
-  background: red;
-  /*animacion de derecha a izquierda*/
-  transform-origin: right;
-  transform: scaleX(0);
-  transition: transform 0.3s ease-in-out; }
-
-.navegacion a:hover:after {
-  /*animacion de derecha a izquierda*/
-  transform-origin: left;
-  transform: scaleX(1); }
 
 @media only screen and (max-width: 767px) {
   /*Logo del nav*/
@@ -189,6 +186,9 @@ p {
 
 /*---------------------------PINTURAS GALERIA--------------------------*/
 /*Edicion con GRID de las pinturas con el efecto overlay*/
+h1 {
+  letter-spacing: 2px; }
+
 .containerGrid {
   display: grid;
   grid-template-columns: repeat(4, 0.2fr);

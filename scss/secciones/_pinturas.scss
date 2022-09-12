@@ -1,5 +1,8 @@
 /*---------------------------PINTURAS GALERIA--------------------------*/
 /*Edicion con GRID de las pinturas con el efecto overlay*/
+h1{
+  letter-spacing: 2px;
+}
 .containerGrid {
   display: grid;
   grid-template-columns: repeat(4, 0.2fr);
