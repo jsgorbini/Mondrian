@@ -70,12 +70,12 @@ p {
 
 @media only screen and (max-width: 767px) {
   /*Logo del nav*/
-  .navbar-brand img {
+  .bg-white .navbar-brand img {
     width: 29vh; } }
 
 @media only screen and (max-width: 425px) {
   /*Logo del nav*/
-  .navbar-brand img {
+  .bg-white .navbar-brand img {
     width: 27vh; } }
 
 /*--------------INDEX-----------------*/
