@@ -233,7 +233,7 @@ h1 {
 
 /*Edicion de broadwayBoogie*/
 .broadwayBoogie {
-  background-image: url(../img/pinturas/p11.jpg);
+  background-image: url(../img/pinturas/broadwayBoogieWoogie.jpg);
   color: transparent;
   height: 6vh; }
 
@@ -281,7 +281,7 @@ h1 {
 /*---------------------CONTACTO-------------------*/
 /*Estilos de contacto.html*/
 .mainContacto {
-  background-image: url(../img/pinturas/p22.jpg);
+  background-image: url(../img/contacto/fondoContacto.jpg);
   /*margenes del formulario*/ }
   .mainContacto .formMargen {
     padding-top: 10vh;
