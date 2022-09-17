@@ -78,6 +78,11 @@ p {
   .bg-white .navbar-brand img {
     width: 27vh; } }
 
+@media only screen and (max-width: 281px) {
+  /*Logo del nav*/
+  .bg-white .navbar-brand img {
+    width: 25vh; } }
+
 /*--------------INDEX-----------------*/
 /*estilos del boton de index.html*/
 .btn-outline-danger {
@@ -238,14 +243,29 @@ h1 {
   height: 6vh; }
 
 /*-------------------RESPONSIVE---------------------------*/
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1025px) {
+  /*responsive de la galeria de pinturas*/
+  .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 0.2fr);
+    margin: 0 0 8vh 0;
+    padding: 0;
+    justify-content: center; }
+    .containerGrid .containerImagen {
+      width: 300px;
+      height: 400px; } }
+
+@media screen and (max-width: 913px) {
   /*responsive de la galeria de pinturas*/
   .containerGrid {
     display: grid;
     grid-template-columns: repeat(2, 0.2fr);
     margin: 0 0 8vh 0;
     padding: 0;
-    justify-content: center; } }
+    justify-content: center; }
+    .containerGrid .containerImagen {
+      width: 250px;
+      height: 300px; } }
 
 @media only screen and (max-width: 425px) {
   /*responsive de la galeria de pinturas*/
