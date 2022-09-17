@@ -68,7 +68,7 @@ p {
       .bg-white div .navegacion .nav-item .active {
         color: red; }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 780px) {
   /*Logo del nav*/
   .bg-white .navbar-brand img {
     width: 29vh; } }
@@ -188,7 +188,7 @@ p {
     width: 100%; } }
 
 /*---------------------------PINTURAS GALERIA--------------------------*/
-/*Edicion con GRID de las pinturas con el efecto overlay*/
+/*Hecho con GRID de las pinturas con el efecto overlay*/
 h1 {
   letter-spacing: 2px; }
 
@@ -256,6 +256,19 @@ h1 {
       height: 400px; } }
 
 @media only screen and (max-width: 913px) {
+  /*responsive de la galeria de pinturas*/
+  .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 0.2fr);
+    justify-content: center;
+    padding: 0;
+    margin: 0 0 8vh 0;
+    gap: 5vh; }
+    .containerGrid .containerImagen {
+      width: 250px;
+      height: 300px; } }
+
+@media only screen and (max-width: 725px) {
   /*responsive de la galeria de pinturas*/
   .containerGrid {
     display: grid;
