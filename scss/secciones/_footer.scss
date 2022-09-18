@@ -1,4 +1,32 @@
 /*-------------------FOOTER---------------------------*/
 .footer-color {
   box-shadow: 30px 20px 20px 20px #00000054;
+  /*Edicion de los botones de las redes sociales*/
+  .btGmail:hover{ 
+    background-color: red;
+    border-color: red;
+    &:focus{
+      box-shadow: 0 0 0 0.25rem rgba(255, 6, 6, 0.411);
+    }
+  }
+
+  .btLinkedin:hover{
+    background-color: #024A86;
+    border-color: #024A86;
+    &:focus{
+      box-shadow: 0 0 0 0.25rem rgba(27, 69, 253, 0.411);
+    }
+  }
+
+  .btGithub:hover{
+    background-color: #EFD40A;
+    border-color: #EFD40A;
+    &:focus{
+      box-shadow: 0 0 0 0.25rem rgba(235, 231, 4, 0.616);
+    }
+  }
 }
+
+
+  
+

@@ -84,7 +84,7 @@ p {
     width: 25vh; } }
 
 /*--------------INDEX-----------------*/
-/*estilos del boton de index.html*/
+/*estilo del boton de index.html de VER MAS*/
 .btn-outline-danger {
   letter-spacing: 2px; }
   .btn-outline-danger:hover {
@@ -293,7 +293,7 @@ h1 {
   .row .colorCartaBlue {
     background-color: #024b86; }
 
-/*Responsive destijl.html la primera seccion*/
+/*Responsive destijl.html la primera seccion USANDO FLEX*/
 @media screen and (max-width: 1024px) {
   .deStijl {
     display: flex;
@@ -333,4 +333,20 @@ h1 {
 
 /*-------------------FOOTER---------------------------*/
 .footer-color {
-  box-shadow: 30px 20px 20px 20px #00000054; }
+  box-shadow: 30px 20px 20px 20px #00000054;
+  /*Edicion de los botones de las redes sociales*/ }
+  .footer-color .btGmail:hover {
+    background-color: red;
+    border-color: red; }
+    .footer-color .btGmail:hover:focus {
+      box-shadow: 0 0 0 0.25rem rgba(255, 6, 6, 0.411); }
+  .footer-color .btLinkedin:hover {
+    background-color: #024A86;
+    border-color: #024A86; }
+    .footer-color .btLinkedin:hover:focus {
+      box-shadow: 0 0 0 0.25rem rgba(27, 69, 253, 0.411); }
+  .footer-color .btGithub:hover {
+    background-color: #EFD40A;
+    border-color: #EFD40A; }
+    .footer-color .btGithub:hover:focus {
+      box-shadow: 0 0 0 0.25rem rgba(235, 231, 4, 0.616); }
